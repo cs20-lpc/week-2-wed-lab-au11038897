@@ -42,6 +42,8 @@ int main() {
     // create a second list using the copy constructor
     ArrayList<string> secondList = myList;
 
+    //cout << secondList;
+
     // modify the second list and display its state
     secondList.append("Beat");
     secondList.replace(2, "Drums");
@@ -68,6 +70,8 @@ int main() {
     cout << "thirdList length: " << thirdList.getLength() << endl;
     cout << "thirdList maximum size: " << thirdList.getMaxSize() << endl;
 
+	//cout << "third list: " << thirdList << endl;
+
     // try getting an element as an invalid operation
     try {
         word = thirdList.getElement(-9);
@@ -78,6 +82,10 @@ int main() {
 
     // add elements to the list
     thirdList.append("Be A");
+
+   // cout << "thirdList length: " << thirdList.getLength() << endl;
+   // cout << "thirdList maximum size: " << thirdList.getMaxSize() << endl;
+
     thirdList.append("Yellow");
 
     // try adding elements as invalid operations

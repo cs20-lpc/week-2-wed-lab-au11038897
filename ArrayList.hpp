@@ -11,6 +11,8 @@ class ArrayList : public List<T> {
         // an array that contains the elements
         T* buffer;
 
+        int length;
+
         // the maximum number of elements in the list
         int maxSize;
 
@@ -39,7 +41,9 @@ class ArrayList : public List<T> {
         // return the element at the given position (argument)
         virtual T getElement(int) const override;
 
-        // return the current length of the list
+        // return the current 
+        // 
+        // of the list
         virtual int getLength() const override;
 
         // return the maximum size of the list
